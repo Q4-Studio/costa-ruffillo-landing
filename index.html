@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleziona Landing - Centri Commerciali Bologna</title>
+    <style>
+        :root {
+            --black: #111111;
+            --red: #d71920;
+            --white: #ffffff;
+            --light: #f6f6f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            align-items: center;
+            background: var(--light);
+            color: var(--black);
+            display: flex;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 760px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 56px);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+
+        .selector {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        a {
+            background: var(--white);
+            border: 2px solid transparent;
+            border-radius: 18px;
+            box-shadow: 0 16px 36px rgba(17, 17, 17, 0.08);
+            color: var(--black);
+            display: block;
+            font-size: 22px;
+            font-weight: 800;
+            padding: 28px;
+            text-decoration: none;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        a span {
+            color: var(--red);
+            display: block;
+            font-size: 14px;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            border-color: var(--red);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Scegli il centro</h1>
+        <p>Apri una delle due landing page disponibili in questo staging.</p>
+        <div class="selector">
+            <a href="landing-costa/"><span>Landing</span>Centro Andrea Costa</a>
+            <a href="landing-ruffillo/"><span>Landing</span>Centro San Ruffillo</a>
+        </div>
+    </main>
+</body>
+
+</html>
