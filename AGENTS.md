@@ -6,6 +6,6 @@
 - `.gitignore` intentionally excludes `src/` and `docs/superpowers/`; they are source/reference material, not the hosted site.
 - `.nojekyll` is present for GitHub Pages. Keep it.
 - Footer credit should remain `Headshot` linking to `https://www.headshotagency.it/`.
-- Facebook sections use direct links only. Avoid Meta SDK `fb-page` widgets and `plugins/page.php` iframes here; previous versions showed blank/loading embeds.
+- Facebook sections use basic `plugins/page.php` page-card iframes with no timeline tabs. Avoid Meta SDK `fb-page` widgets and timeline/post embeds here; previous versions showed blank/loading timelines.
 - Do not show vacant units such as `Sfitto` in the public `Negozi` sections.
 - To verify after edits, open `index.html` locally and both landing folders, or run focused searches for removed public text: `Sfitto`, `PEC`, `Q4 Studio`, `fb-page`, `connect.facebook.net`.

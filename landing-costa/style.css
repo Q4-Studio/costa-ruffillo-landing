@@ -503,12 +503,25 @@ section {
     width: 100%;
 }
 
+.facebook-frame-basic {
+    background: var(--bg-white);
+}
+
 .facebook-timeline {
     background: var(--bg-white);
     border: 0;
     border-radius: 14px;
     display: block;
     height: 720px;
+    width: 100%;
+}
+
+.facebook-page-card {
+    background: var(--bg-white);
+    border: 0;
+    border-radius: 14px;
+    display: block;
+    height: 240px;
     width: 100%;
 }
 
@@ -567,6 +580,10 @@ section {
 @media (min-width: 900px) {
     .fb-grid {
         grid-template-columns: minmax(0, 500px) 1fr;
+    }
+
+    .fb-grid-basic {
+        align-items: center;
     }
 
     .facebook-frame {
