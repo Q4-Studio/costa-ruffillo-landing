@@ -21,11 +21,11 @@
                     <img src="assets/SR_loghi.png" alt="Centro Commerciale San Ruffillo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Apri menu">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-btn" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="primary-nav">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
             <nav>
-                <ul>
+                <ul id="primary-nav">
                     <li><a href="#negozi">Negozi</a></li>
                     <li><a href="#servizi">Servizi</a></li>
                     <li><a href="#centro">Il Centro</a></li>
@@ -38,7 +38,19 @@
     </header>
 
     <section id="home" class="hero" aria-label="Centro Commerciale San Ruffillo">
-        <img class="hero-banner" src="assets/ruffillo-banner.jpg" alt="Centro Commerciale San Ruffillo">
+        <div class="hero-inner">
+            <img class="hero-banner" src="assets/ruffillo-banner.jpg" alt="Centro Commerciale San Ruffillo" loading="eager" fetchpriority="high">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <p class="hero-eyebrow">Centro Commerciale</p>
+                <h1 class="hero-title">San Ruffillo</h1>
+                <p class="hero-address"><i class="fas fa-location-dot" aria-hidden="true"></i>Via Ponchielli, 23 &mdash; Bologna</p>
+                <div class="hero-ctas">
+                    <a class="btn" href="#negozi">Scopri i negozi</a>
+                    <a class="btn btn-ghost" href="#contatti">Contattaci</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="negozi" class="stores">
@@ -95,42 +107,42 @@
             </div>
             <div class="services-grid">
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-cart-shopping"></i></div>
+                    <div class="icon-box"><i class="fas fa-cart-shopping" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Supermercato e galleria</h3>
                         <p>Coop&Coop è l'insegna alimentare principale, affiancata da 11 attività commerciali e servizi specializzati.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-mug-saucer"></i></div>
+                    <div class="icon-box icon-box--amber"><i class="fas fa-mug-saucer" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Pausa e ristorazione</h3>
                         <p>Segafredo completa l'offerta del centro con un punto dedicato a colazioni, pause e momenti veloci.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-tooth"></i></div>
+                    <div class="icon-box icon-box--mint"><i class="fas fa-tooth" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Salute e benessere</h3>
                         <p>I.Denticoop by Dental Pro, Coop Salute/Parafarmacia, centro estetico e ambulatorio odontoiatrico.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-key"></i></div>
+                    <div class="icon-box icon-box--sky"><i class="fas fa-key" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Servizi pratici</h3>
                         <p>Lavaggio a secco, parrucchiere, riparazioni tacchi e chiavi, fototessere e ufficio postale.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-universal-access"></i></div>
+                    <div class="icon-box icon-box--amber"><i class="fas fa-universal-access" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Famiglie e accessibilità</h3>
                         <p>Giostrine per bambini, nursery, carrelli per disabili, DAE e servizi pensati per una visita più semplice.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-wifi"></i></div>
+                    <div class="icon-box icon-box--sky"><i class="fas fa-wifi" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Comodità digitali</h3>
                         <p>Wi-fi gratuita, punto ricarica cellulari/tablet, cassette postali e stazione ecologica per piccoli elettrodomestici.</p>
@@ -150,12 +162,30 @@
                     <p>Con 525 posti auto, collegamenti pubblici e un'offerta completa di servizi alla clientela, è un riferimento pratico per il quartiere.</p>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card"><strong>2002</strong><p>Anno di apertura</p></div>
-                    <div class="stat-card"><strong>6.330 m2</strong><p>GLA del centro</p></div>
-                    <div class="stat-card"><strong>525</strong><p>Posti auto</p></div>
-                    <div class="stat-card"><strong>11</strong><p>Attività commerciali</p></div>
-                    <div class="stat-card"><strong>1</strong><p>Livello commerciale</p></div>
-                    <div class="stat-card"><strong>Coop&Coop</strong><p>Insegna alimentare</p></div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-calendar" aria-hidden="true"></i></span>
+                        <strong>2002</strong><p>Anno di apertura</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-ruler-combined" aria-hidden="true"></i></span>
+                        <strong>6.330 m²</strong><p>GLA del centro</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-square-parking" aria-hidden="true"></i></span>
+                        <strong>525</strong><p>Posti auto</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-store" aria-hidden="true"></i></span>
+                        <strong>11</strong><p>Attività commerciali</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                        <strong>1</strong><p>Livello commerciale</p>
+                    </div>
+                    <div class="stat-card stat-text">
+                        <span class="stat-icon"><i class="fas fa-basket-shopping" aria-hidden="true"></i></span>
+                        <strong>Coop&amp;Coop</strong><p>Insegna alimentare</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,8 +197,18 @@
                 <h2 class="section-title">Seguici su Facebook</h2>
                 <p class="section-subtitle">Resta aggiornato su eventi, promozioni e novità del Centro San Ruffillo.</p>
             </div>
-            <div class="facebook-frame">
-                <iframe class="facebook-timeline" title="Timeline Facebook Centro San Ruffillo" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcentrosanruffillo%2F&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+            <div class="fb-grid">
+                <div class="facebook-frame">
+                    <iframe class="facebook-timeline" title="Timeline Facebook Centro San Ruffillo" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcentrosanruffillo%2F&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+                </div>
+                <div class="fb-info">
+                    <h3>Resta in contatto</h3>
+                    <p>Eventi, promozioni e novità del centro vengono pubblicati sulla pagina Facebook ufficiale.</p>
+                    <p>Segui Centro San Ruffillo per non perdere aggiornamenti dalle attività della galleria.</p>
+                    <a class="btn" href="https://www.facebook.com/centrosanruffillo/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>Apri la pagina Facebook
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -179,7 +219,18 @@
                 <h2 class="section-title">Dove Siamo</h2>
                 <p class="section-subtitle">Via Ponchielli, 23 - Bologna (BO)</p>
             </div>
-            <iframe class="map-frame" title="Mappa Centro Commerciale San Ruffillo" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via%20Ponchielli%2023%20Bologna&output=embed"></iframe>
+            <div class="location-grid">
+                <iframe class="map-frame" title="Mappa Centro Commerciale San Ruffillo" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via%20Ponchielli%2023%20Bologna&output=embed"></iframe>
+                <div class="location-card">
+                    <h3>Come raggiungerci</h3>
+                    <p class="row"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Via Ponchielli, 23 &mdash; Bologna (BO)</p>
+                    <p class="row"><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+39051482628">+39 051 482628</a></p>
+                    <p class="row"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@centrosanruffillo.it">info@centrosanruffillo.it</a></p>
+                    <a class="btn" href="https://www.google.com/maps?q=Via+Ponchielli+23+Bologna" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Apri in Google Maps
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
