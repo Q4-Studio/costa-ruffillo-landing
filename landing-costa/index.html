@@ -21,11 +21,11 @@
                     <img src="assets/AC_loghi.png" alt="Centro Commerciale Andrea Costa">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Apri menu">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-btn" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="primary-nav">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
             <nav>
-                <ul>
+                <ul id="primary-nav">
                     <li><a href="#negozi">Negozi</a></li>
                     <li><a href="#servizi">Servizi</a></li>
                     <li><a href="#centro">Il Centro</a></li>
@@ -38,7 +38,7 @@
     </header>
 
     <section id="home" class="hero" aria-label="Centro Commerciale Andrea Costa">
-        <img class="hero-banner" src="assets/costa-banner.jpg" alt="Centro Commerciale Andrea Costa">
+        <img class="hero-banner" src="assets/costa-banner.jpg" alt="Centro Commerciale Andrea Costa" loading="eager" fetchpriority="high">
     </section>
 
     <section id="negozi" class="stores">
@@ -83,42 +83,42 @@
             </div>
             <div class="services-grid">
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-cart-shopping"></i></div>
+                    <div class="icon-box"><i class="fas fa-cart-shopping" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Spesa e quotidianità</h3>
                         <p>Il centro ospita Coop e una galleria pensata per acquisti rapidi, commissioni e servizi di tutti i giorni.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                    <div class="icon-box icon-box--amber"><i class="fas fa-utensils" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Ristorazione</h3>
                         <p>Due attività di ristorazione completano l'offerta del centro per pause, colazioni e momenti veloci.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-prescription-bottle-medical"></i></div>
+                    <div class="icon-box icon-box--mint"><i class="fas fa-prescription-bottle-medical" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Farmacia e servizi</h3>
                         <p>Farmacia, ufficio postale, tabacchi, parrucchiere, lavaggio a secco e fototessere sono disponibili nella galleria.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-wifi"></i></div>
+                    <div class="icon-box icon-box--sky"><i class="fas fa-wifi" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Comfort per i clienti</h3>
                         <p>Wi-fi gratuita, nursery, cassette postali, carrelli per disabili e box ricarica cellulari/tablet.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-bus"></i></div>
+                    <div class="icon-box"><i class="fas fa-bus" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Collegamenti</h3>
                         <p>Il centro è in posizione urbana ed è servito da trasporti pubblici di collegamento.</p>
                     </div>
                 </article>
                 <article class="service-card">
-                    <div class="icon-box"><i class="fas fa-recycle"></i></div>
+                    <div class="icon-box icon-box--mint"><i class="fas fa-recycle" aria-hidden="true"></i></div>
                     <div class="service-content">
                         <h3>Servizi ambientali</h3>
                         <p>Stazione ecologica per la raccolta di piccoli elettrodomestici e gestione differenziata dei rifiuti.</p>
@@ -138,12 +138,30 @@
                     <p>La struttura mette a disposizione 200 posti auto e un mix funzionale di negozi, ristorazione e servizi extra commerciali.</p>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card"><strong>2002</strong><p>Anno di apertura</p></div>
-                    <div class="stat-card"><strong>2016</strong><p>Ristrutturazione</p></div>
-                    <div class="stat-card"><strong>3.910 m2</strong><p>GLA del centro</p></div>
-                    <div class="stat-card"><strong>200</strong><p>Posti auto</p></div>
-                    <div class="stat-card"><strong>7</strong><p>Attività commerciali</p></div>
-                    <div class="stat-card"><strong>1</strong><p>Livello commerciale</p></div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-calendar" aria-hidden="true"></i></span>
+                        <strong>2002</strong><p>Anno di apertura</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-paint-roller" aria-hidden="true"></i></span>
+                        <strong>2016</strong><p>Ristrutturazione</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-ruler-combined" aria-hidden="true"></i></span>
+                        <strong>3.910 m²</strong><p>GLA del centro</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-square-parking" aria-hidden="true"></i></span>
+                        <strong>200</strong><p>Posti auto</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-store" aria-hidden="true"></i></span>
+                        <strong>7</strong><p>Attività commerciali</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                        <strong>1</strong><p>Livello commerciale</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,8 +173,18 @@
                 <h2 class="section-title">Seguici su Facebook</h2>
                 <p class="section-subtitle">Resta aggiornato su eventi, promozioni e novità del Centro Andrea Costa.</p>
             </div>
-            <div class="facebook-frame">
-                <iframe class="facebook-timeline" title="Timeline Facebook Centro Andrea Costa" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCentroAndreaCosta%2F&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+            <div class="fb-grid">
+                <div class="facebook-frame">
+                    <iframe class="facebook-timeline" title="Timeline Facebook Centro Andrea Costa" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCentroAndreaCosta%2F&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+                </div>
+                <div class="fb-info">
+                    <h3>Resta in contatto</h3>
+                    <p>Eventi, promozioni e novità del centro vengono pubblicati sulla pagina Facebook ufficiale.</p>
+                    <p>Segui Centro Andrea Costa per non perdere aggiornamenti dalle attività della galleria.</p>
+                    <a class="btn" href="https://www.facebook.com/CentroAndreaCosta/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>Apri la pagina Facebook
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -167,7 +195,18 @@
                 <h2 class="section-title">Dove Siamo</h2>
                 <p class="section-subtitle">Via A. Costa, 156 - Bologna (BO)</p>
             </div>
-            <iframe class="map-frame" title="Mappa Centro Commerciale Andrea Costa" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via%20A.%20Costa%20156%20Bologna&output=embed"></iframe>
+            <div class="location-grid">
+                <iframe class="map-frame" title="Mappa Centro Commerciale Andrea Costa" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via%20A.%20Costa%20156%20Bologna&output=embed"></iframe>
+                <div class="location-card">
+                    <h3>Come raggiungerci</h3>
+                    <p class="row"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Via A. Costa, 156 &mdash; Bologna (BO)</p>
+                    <p class="row"><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+393357928510">+39 335 7928510</a></p>
+                    <p class="row"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@centroandreacosta.it">info@centroandreacosta.it</a></p>
+                    <a class="btn" href="https://www.google.com/maps?q=Via+A.+Costa+156+Bologna" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Apri in Google Maps
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
