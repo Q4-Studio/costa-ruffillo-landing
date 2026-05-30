@@ -38,17 +38,28 @@
     </header>
 
     <section id="home" class="hero" aria-label="Centro Commerciale San Ruffillo">
-        <div class="hero-inner">
-            <img class="hero-banner" src="assets/ruffillo-banner.jpg" alt="Centro Commerciale San Ruffillo" loading="eager" fetchpriority="high">
+        <div class="hero-inner media-slider" data-slider data-autoplay="true">
+            <div class="slider-track">
+                <img class="hero-banner slider-slide is-active" src="assets/gallery/SR_esterno.jpg" alt="Esterno del Centro Commerciale San Ruffillo" loading="eager" fetchpriority="high">
+                <img class="hero-banner slider-slide" src="assets/gallery/SR_foto1.jpg" alt="Galleria del Centro Commerciale San Ruffillo" loading="lazy">
+                <img class="hero-banner slider-slide" src="assets/gallery/SR_foto2.jpg" alt="Spazi interni del Centro San Ruffillo" loading="lazy">
+            </div>
             <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="container hero-content">
-                <p class="hero-eyebrow">Centro Commerciale</p>
-                <h1 class="hero-title">San Ruffillo</h1>
-                <p class="hero-address"><i class="fas fa-location-dot" aria-hidden="true"></i>Via Ponchielli, 23 &mdash; Bologna</p>
-                <div class="hero-ctas">
-                    <a class="btn" href="#negozi">Scopri i negozi</a>
-                    <a class="btn btn-ghost" href="#contatti">Contattaci</a>
+            <div class="hero-content">
+                <div class="container">
+                    <p class="hero-eyebrow">Centro Commerciale</p>
+                    <h1 class="hero-title">San Ruffillo</h1>
+                    <p class="hero-address"><i class="fas fa-location-dot" aria-hidden="true"></i>Via Ponchielli, 23 &mdash; Bologna</p>
+                    <div class="hero-ctas">
+                        <a class="btn" href="#negozi">Scopri i negozi</a>
+                        <a class="btn btn-ghost" href="#contatti">Contattaci</a>
+                    </div>
                 </div>
+            </div>
+            <div class="slider-controls hero-slider-controls" aria-label="Foto principali San Ruffillo">
+                <button class="slider-btn" type="button" data-slider-prev aria-label="Foto precedente"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="slider-dots" data-slider-dots></div>
+                <button class="slider-btn" type="button" data-slider-next aria-label="Foto successiva"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
@@ -186,6 +197,47 @@
                         <span class="stat-icon"><i class="fas fa-basket-shopping" aria-hidden="true"></i></span>
                         <strong>Coop&amp;Coop</strong><p>Insegna alimentare</p>
                     </div>
+                </div>
+            </div>
+            <div class="center-gallery media-slider" data-slider data-autoplay="true">
+                <div class="gallery-heading">
+                    <span>Galleria fotografica</span>
+                    <h3>Dentro il centro</h3>
+                </div>
+                <div class="slider-track center-gallery-track">
+                    <figure class="gallery-slide slider-slide is-active">
+                        <img src="assets/gallery/SR_fotoCoop.jpg" alt="Coop San Ruffillo" loading="lazy">
+                        <figcaption>Coop&amp;Coop</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoOtticaCoop.jpg" alt="Ottica Coop San Ruffillo" loading="lazy">
+                        <figcaption>Ottica Coop</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoCoopSalute.jpg" alt="Salute Coop San Ruffillo" loading="lazy">
+                        <figcaption>Salute Coop</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoFabianiGioiellerie.jpg" alt="Fabiani Gioiellerie San Ruffillo" loading="lazy">
+                        <figcaption>Fabiani Gioiellerie</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoKingDiffusion.jpg" alt="King Parrucchieri San Ruffillo" loading="lazy">
+                        <figcaption>King Parrucchieri</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoPoste.jpg" alt="Poste Italiane San Ruffillo" loading="lazy">
+                        <figcaption>Poste Italiane</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/SR_fotoSegafredoBar.jpg" alt="Bar Segafredo San Ruffillo" loading="lazy">
+                        <figcaption>Bar Segafredo</figcaption>
+                    </figure>
+                </div>
+                <div class="slider-controls gallery-slider-controls" aria-label="Foto negozi San Ruffillo">
+                    <button class="slider-btn" type="button" data-slider-prev aria-label="Foto negozio precedente"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <div class="slider-dots" data-slider-dots></div>
+                    <button class="slider-btn" type="button" data-slider-next aria-label="Foto negozio successiva"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
