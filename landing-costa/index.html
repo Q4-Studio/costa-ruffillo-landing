@@ -38,7 +38,32 @@
     </header>
 
     <section id="home" class="hero" aria-label="Centro Commerciale Andrea Costa">
-        <img class="hero-banner" src="assets/costa-banner.jpg" alt="Centro Commerciale Andrea Costa" loading="eager" fetchpriority="high">
+        <div class="hero-inner media-slider" data-slider data-autoplay="true">
+            <div class="slider-track">
+                <img class="hero-banner slider-slide is-active" src="assets/gallery/AC_esterno.jpg" alt="Esterno del Centro Commerciale Andrea Costa" loading="eager" fetchpriority="high">
+                <img class="hero-banner slider-slide" src="assets/gallery/AC_foto1.jpg" alt="Galleria del Centro Commerciale Andrea Costa" loading="lazy">
+                <img class="hero-banner slider-slide" src="assets/gallery/AC_foto2.jpg" alt="Spazi interni del Centro Andrea Costa" loading="lazy">
+                <img class="hero-banner slider-slide" src="assets/gallery/AC_foto3.jpg" alt="Percorso negozi del Centro Andrea Costa" loading="lazy">
+                <img class="hero-banner slider-slide" src="assets/gallery/AC_foto4.jpg" alt="Dettaglio della galleria Andrea Costa" loading="lazy">
+            </div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <p class="hero-eyebrow">Centro Commerciale</p>
+                    <h1 class="hero-title">Andrea Costa</h1>
+                    <p class="hero-address"><i class="fas fa-location-dot" aria-hidden="true"></i>Via A. Costa, 156 &mdash; Bologna</p>
+                    <div class="hero-ctas">
+                        <a class="btn" href="#negozi">Scopri i negozi</a>
+                        <a class="btn btn-ghost" href="#contatti">Contattaci</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls hero-slider-controls" aria-label="Foto principali Andrea Costa">
+                <button class="slider-btn" type="button" data-slider-prev aria-label="Foto precedente"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="slider-dots" data-slider-dots></div>
+                <button class="slider-btn" type="button" data-slider-next aria-label="Foto successiva"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
     </section>
 
     <section id="negozi" class="stores">
@@ -162,6 +187,43 @@
                         <span class="stat-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
                         <strong>1</strong><p>Livello commerciale</p>
                     </div>
+                </div>
+            </div>
+            <div class="center-gallery media-slider" data-slider data-autoplay="true">
+                <div class="gallery-heading">
+                    <span>Galleria fotografica</span>
+                    <h3>Dentro il centro</h3>
+                </div>
+                <div class="slider-track center-gallery-track">
+                    <figure class="gallery-slide slider-slide is-active">
+                        <img src="assets/gallery/AC_fotoCoop.jpg" alt="Coop Super Store Andrea Costa" loading="lazy">
+                        <figcaption>Coop Super Store</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/AC_fotoBenuFarmacia.jpg" alt="Benu Farmacia Andrea Costa" loading="lazy">
+                        <figcaption>Benu Farmacia</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/AC_fotoBuonaPausaCoop.jpg" alt="Buona Pausa Coop Andrea Costa" loading="lazy">
+                        <figcaption>Buona Pausa Coop</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/AC_fotoJeanMary.jpg" alt="Jean Mary Parrucchiere Andrea Costa" loading="lazy">
+                        <figcaption>Jean Mary Parrucchiere</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/AC_fotoTabaccheria.jpg" alt="Tabaccheria La 310 Andrea Costa" loading="lazy">
+                        <figcaption>Tabaccheria La 310</figcaption>
+                    </figure>
+                    <figure class="gallery-slide slider-slide">
+                        <img src="assets/gallery/AC_fotoOtticaCoop.jpg" alt="Ottica Coop Andrea Costa" loading="lazy">
+                        <figcaption>Ottica Coop</figcaption>
+                    </figure>
+                </div>
+                <div class="slider-controls gallery-slider-controls" aria-label="Foto negozi Andrea Costa">
+                    <button class="slider-btn" type="button" data-slider-prev aria-label="Foto negozio precedente"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <div class="slider-dots" data-slider-dots></div>
+                    <button class="slider-btn" type="button" data-slider-next aria-label="Foto negozio successiva"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
