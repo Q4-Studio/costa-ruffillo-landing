@@ -120,20 +120,13 @@ nav a:focus-visible::after {
 }
 
 .hero-inner {
-    align-items: flex-end;
-    display: flex;
     overflow: hidden;
-    min-height: clamp(420px, 70vh, 640px);
     position: relative;
 }
 
 .hero-banner {
     display: block;
-    height: 100%;
-    inset: 0;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
+    height: auto;
     width: 100%;
 }
 
